@@ -2,6 +2,7 @@
 
 The idea behind the project is to generate React components using AI technologies.
 
+https://user-images.githubusercontent.com/7129907/226977433-7299d50c-ee00-4c2c-8514-b3795bee3109.mov
 
 ## Components 
 
