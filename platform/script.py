@@ -76,7 +76,8 @@ class MyHandler(BaseHTTPRequestHandler):
         parsed_path = urlparse(self.path)
         query_components = parse_qs(parsed_path.query)
         if 'component' in query_components:
-            component_name = query_components['component'][0].capitalize()
+            component_name = ''.join([word.capitalize() for word in query_components['component'][0].split("-")])
+            print(component_name)
             component_code, app_code = generate_code("react", component_name)
 
             os.system(f"touch ../example/src/{component_name}.js")
